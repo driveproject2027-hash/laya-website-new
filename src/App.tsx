@@ -119,8 +119,6 @@ const AnimatedRoutes = () => {
         {/* Hostinger edge caching and legacy URL aliases for Publications */}
         <Route path="/publications" element={<PageTransition><Publications /></PageTransition>} />
         <Route path="/publications.html" element={<Navigate to="/publications" replace />} />
-        <Route path="/publications/" element={<Navigate to="/publications" replace />} />
-        <Route path="/Publications" element={<Navigate to="/publications" replace />} />
         
         <Route path="/stories" element={<PageTransition><Stories /></PageTransition>} />
         {/* Field note detail. One route pattern rather than one per slug, so
